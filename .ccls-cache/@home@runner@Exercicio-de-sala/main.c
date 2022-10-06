@@ -1,6 +1,53 @@
 #include <stdio.h>
 
-void unit(mod){
+void unit_function();
+void teen_function();
+void complete_numbers();
+void div_function();
+
+int main(void){
+
+  int num = 0;
+  int mod = 0;
+  int div = 0;
+
+  do{
+      printf("\n\nInforme um número: ");
+      scanf("%d", &num);
+
+      if(num == 0){
+          break;
+        
+      }else{
+          mod = num % 10;
+          div = num / 10;
+
+          if(div == 0 && mod != 0){
+              unit_function(mod);
+            
+          } else if(mod == 0 && div != 0){
+              complete_numbers(div);
+            
+          } else if(div == 1 && mod >= 1 && mod <= 9){
+              teen_function(mod);
+            
+          } else if(div >= 2 && div <= 9 && mod >= 1 && mod <= 9){
+              div_function(div);
+              unit_function(mod);
+            
+          } else{
+              printf("Cem.");
+          }
+      }
+    
+  }while(num != 0);
+
+  printf("Programa finalizado com sucesso :) .");
+
+  return 0;
+}
+
+void unit_function(mod){
   switch(mod){
     case 1:
         printf("Um.");
@@ -164,46 +211,4 @@ void div_function(div){
         printf("Noventa e ");
         break;
     }
-}
-
-int main(void) {
-
-  int num = 0;
-  int mod = 0;
-  int div = 0;
-
-  do{
-      printf("\n\nInforme um número: ");
-      scanf("%d", &num);
-
-      if(num == 0){
-          break;
-        
-      }else{
-          mod = num % 10;
-          div = num / 10;
-
-          if(div == 0 && mod != 0){
-              unit(mod);
-            
-          } else if(mod == 0 && div != 0){
-              complete_numbers(div);
-            
-          } else if(div == 1 && mod >= 1 && mod <= 9){
-              teen_function(mod);
-            
-          } else if(div >= 2 && div <= 9 && mod >= 1 && mod <= 9){
-              div_function(div);
-              unit(mod);
-            
-          } else{
-              printf("Cem.");
-          }
-      }
-    
-  }while(num != 0);
-
-  printf("Programa finalizado com sucesso :) .");
-
-  return 0;
 }
