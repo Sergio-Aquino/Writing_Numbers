@@ -36,7 +36,7 @@ int main(void){
               unit_function(mod);
             
           }else{
-              printf("Cem.");
+              printf("Númro inválido. Tente novamente.");
           }
       }
     
