@@ -35,7 +35,7 @@ int main(void){
               div_function(div);
               unit_function(mod);
             
-          } else{
+          }else{
               printf("Cem.");
           }
       }
@@ -47,11 +47,12 @@ int main(void){
   return 0;
 }
 
+
 void unit_function(mod){
   switch(mod){
     case 1:
-        printf("Um.");
-        break;
+      printf("Um.");
+      break;
 
     case 2:
       printf("Dois.");
@@ -84,9 +85,7 @@ void unit_function(mod){
     case 9:
       printf("Nove.");
       break;
-
     }
-  
 }
 
 
@@ -128,7 +127,6 @@ void teen_function(mod){
         printf("Dezenove.");
         break;
     }
-    
 }
 
 
