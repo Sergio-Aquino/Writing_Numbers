@@ -18,7 +18,7 @@ int main(void){
       if(num == 0){
           break;
         
-      }else{
+      } else {
           mod = num % 10;
           div = num / 10;
 
@@ -35,7 +35,7 @@ int main(void){
               div_function(div);
               unit_function(mod);
             
-          }else{
+          } else {
               printf("invalid number. Please, try again.");
           }
       }
