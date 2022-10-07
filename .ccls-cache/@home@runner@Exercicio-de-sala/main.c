@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void unit_function();
-void teen_function();
-void complete_numbers();
-void div_function();
+void unit_function(int mod);
+void teen_function(int mod);
+void complete_numbers(int div);
+void div_function(int div);
 
 int main(void){
 
@@ -12,7 +12,7 @@ int main(void){
   int div = 0;
 
   do{
-      printf("\n\nInforme um número: ");
+      printf("\n\nInform a number: ");
       scanf("%d", &num);
 
       if(num == 0){
@@ -36,177 +36,177 @@ int main(void){
               unit_function(mod);
             
           }else{
-              printf("Númro inválido. Tente novamente.");
+              printf("invalid number. Please, try again.");
           }
       }
     
   }while(num != 0);
 
-  printf("Programa finalizado com sucesso :) .");
+  printf("The program was ended successfully.");
 
   return 0;
 }
 
 
-void unit_function(mod){
+void unit_function(int mod){
   switch(mod){
     case 1:
-      printf("Um.");
+      printf("One.");
       break;
 
     case 2:
-      printf("Dois.");
+      printf("Two.");
       break;
 
     case 3:
-      printf("Três.");
+      printf("Three.");
       break; 
 
     case 4:
-      printf("Quatro.");
+      printf("Four.");
       break; 
 
     case 5:
-      printf("Cinco.");
+      printf("Five.");
       break;
 
     case 6:
-      printf("Seis.");
+      printf("Six.");
       break;
 
     case 7:
-      printf("Sete.");
+      printf("Seven.");
       break; 
 
     case 8:
-      printf("Oito.");
+      printf("Eight.");
       break;
 
     case 9:
-      printf("Nove.");
+      printf("Nine.");
       break;
     }
 }
 
 
-void teen_function(mod){
+void teen_function(int mod){
     switch(mod){
       case 1:
-        printf("Onze.");
+        printf("Eleven.");
         break;
 
       case 2:
-        printf("Doze.");
+        printf("Twelve.");
         break;
 
       case 3:
-        printf("Treze.");
+        printf("Thirteen.");
         break;
 
       case 4:
-        printf("Quatorze.");
+        printf("Fourteen.");
         break;
 
       case 5:
-        printf("Quinze.");
+        printf("Fifteen.");
         break;
 
       case 6:
-        printf("Dezesseis.");
+        printf("Sixteen.");
         break;
 
       case 7:
-        printf("Dezessete.");
+        printf("Seventeen.");
         break;
 
       case 8:
-        printf("Dezoito.");
+        printf("Eighteen.");
         break;
 
       case 9:
-        printf("Dezenove.");
+        printf("Nineteen.");
         break;
     }
 }
 
 
-void complete_numbers(div){
+void complete_numbers(int div){
     switch(div){
         case 1:
-        printf("Dez.");
+        printf("Ten.");
         break;
 
       case 2:
-        printf("Vinte.");
+        printf("Twenty.");
         break;
 
       case 3:
-        printf("Trinta.");
+        printf("Thirty.");
         break;
 
       case 4:
-        printf("Quarenta.");
+        printf("Fourty.");
         break;
 
       case 5:
-        printf("Cinquenta.");
+        printf("Fifty.");
         break;
 
       case 6:
-        printf("Sessenta.");
+        printf("Sixty.");
         break;
 
       case 7:
-        printf("Setenta.");
+        printf("Seventy.");
         break;
 
       case 8:
-        printf("Oitenta.");
+        printf("Eighty.");
         break;
 
       case 9:
-        printf("Noventa.");
+        printf("Ninety.");
         break;
 
       default:
-        printf("Cem.");
+        printf("One hundred.");
         break;
     }
 }
 
 
-void div_function(div){
+void div_function(int div){
     switch(div){
       case 2:
-        printf("Vinte e ");
+        printf("Twenty ");
         break;
 
       case 3:
-        printf("Trinta e ");
+        printf("Thirty ");
         break;
 
       case 4:
-        printf("Quarenta e ");
+        printf("Fourty ");
         break;
 
       case 5:
-        printf("Cinquenta e ");
+        printf("Fifty ");
         break;
 
       case 6:
-        printf("Sessenta e ");
+        printf("Sixty ");
         break;
 
       case 7:
-        printf("Setenta e ");
+        printf("Seventy ");
         break;
 
       case 8:
-        printf("Oitenta e ");
+        printf("Eighty ");
         break;
 
       case 9:
-        printf("Noventa e ");
+        printf("Ninety ");
         break;
     }
 }
