@@ -11,7 +11,7 @@ int main(void){
   int mod = 0;
   int div = 0;
 
-  do{
+  do {
       printf("\n\nInform a number: ");
       scanf("%d", &num);
 
@@ -40,7 +40,7 @@ int main(void){
           }
       }
     
-  }while(num != 0);
+  } while(num != 0);
 
   printf("The program was ended successfully.");
 
