@@ -49,6 +49,7 @@ int main(void){
 
 
 void unit_function(int mod){
+  
   switch(mod){
     case 1:
       printf("One.");
@@ -90,6 +91,7 @@ void unit_function(int mod){
 
 
 void teen_function(int mod){
+  
     switch(mod){
       case 1:
         printf("Eleven.");
@@ -131,6 +133,7 @@ void teen_function(int mod){
 
 
 void complete_numbers(int div){
+  
     switch(div){
         case 1:
         printf("Ten.");
@@ -176,6 +179,7 @@ void complete_numbers(int div){
 
 
 void div_function(int div){
+  
     switch(div){
       case 2:
         printf("Twenty ");
